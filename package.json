@@ -1,7 +1,7 @@
 {
   "name": "stan-chatbot",
   "version": "1.0.0",
-  "description": "AI Chatbot with Memory - STAN Internship Challenge",
+  "description": "AI Chatbot with Memory - Balu",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -11,22 +11,26 @@
   "keywords": [
     "chatbot",
     "ai",
-    "gemini",
-    "nodejs",
-    "mongodb"
+    "groq",
+    "llama",
+    "memory",
+    "conversational-ai"
   ],
   "author": "Your Name",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
+    "express": "^4.18.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "groq-sdk": "^0.37.0",
-    "mongodb": "^6.10.0",
-    "uuid": "^10.0.0"
+    "dotenv": "^16.3.1",
+    "groq-sdk": "^0.3.2",
+    "mongodb": "^6.3.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.0.2"
   }
 }
