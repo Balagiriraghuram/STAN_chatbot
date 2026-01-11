@@ -10,8 +10,8 @@ const toggleThemeBtn = document.getElementById('toggleTheme');
 const notification = document.getElementById('notification');
 
 // Config
+//const API_URL = 'http://localhost:3000/api/chat';
 const API_URL = 'http://localhost:3000/api/chat';
-
 // User ID
 let userId = localStorage.getItem('balu_chat_userId');
 if (!userId) {
