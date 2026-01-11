@@ -11,7 +11,7 @@ const notification = document.getElementById('notification');
 
 // Config
 //const API_URL = 'http://localhost:3000/api/chat';
-const API_URL = 'http://localhost:3000/api/chat';
+const API_URL = window.location.origin + '/api/chat';
 // User ID
 let userId = localStorage.getItem('balu_chat_userId');
 if (!userId) {
@@ -187,7 +187,7 @@ function loadTheme() {
 // Check server
 async function checkServer() {
     try {
-        await fetch('http://localhost:3000/api/health');
+        await fetch(window.location.origin + '/api/health');//await fetch('http://localhost:3000/api/health');
         showNotification('Connected');
     } catch {
         showNotification('Server offline');
